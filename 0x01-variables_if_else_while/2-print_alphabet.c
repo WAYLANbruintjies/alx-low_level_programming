@@ -9,8 +9,9 @@ int main(void)
 	int i;
 
 	for (i = 0; i <= 26; i++)
-	{	putchar(alp[i]);
+	{	
+		putchar(alp[i]);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
