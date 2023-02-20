@@ -8,7 +8,7 @@ int main(void)
 	int n;
 	char c;
 
-	for (n = 0; n <= 10; n++)
+	while (n = 0; n <= 10; n++)
 		putchar(n + '0');
 
 	while (c = 'a'; c <= 'f'; c++)
