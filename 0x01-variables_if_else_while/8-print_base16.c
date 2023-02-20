@@ -5,15 +5,23 @@
  */
 int main(void)
 {
-	int n;
 	char c;
 
-	while (n = 0; n <= 10; n++)
-		putchar(n + '0');
+	int d;
 
-	while (c = 'a'; c <= 'f'; c++)
+	c = 'a';
+	d = '0';
+
+	while (d < 10)
+	{
+		putchar(d + '0');
+		d++;
+	}
+	while (c <= 'f')
+	{
 		putchar(c);
-
+		c++;
+	}
 	putchar('\n');
 	return (0);
 }
