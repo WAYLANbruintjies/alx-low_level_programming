@@ -3,7 +3,9 @@
 /**
  * main - A function to print the alphabet in lowercase, new line follows
  */
+
 void print_alphabet(void)
+
 {
 	char alpha;
 
