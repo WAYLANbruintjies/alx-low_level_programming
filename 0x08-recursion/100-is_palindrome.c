@@ -1,5 +1,7 @@
 #include "main.h"
 
+int comparator(char *s, int n1, int n2);
+
 /**
  * _strlen_recursion - Returns the length of a string
  * @s: String to be used as input
@@ -12,6 +14,14 @@ int _strlen_recursion(char *s)
 	else
 		return (1 + _strlen_recursion(s + 1));
 }
+
+/**
+ * comparator - compares each char of a string
+ * @s: String input
+ * @n1: Iterator one
+ * @n2: Iterator two
+ * Return: void
+ */
 int comparator(char *s, int n1, int n2)
 {
 	if (*(s + n1) == *(s + n2))
