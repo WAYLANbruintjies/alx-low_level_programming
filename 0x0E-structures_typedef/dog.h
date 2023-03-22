@@ -3,7 +3,6 @@
 
 /**
  * struct dog - initializes struct dog basic info
- * @d: pointer to struct dog
  * @name: name to initialize
  * @age: age to initialize
  * @owner: owner to initialize
