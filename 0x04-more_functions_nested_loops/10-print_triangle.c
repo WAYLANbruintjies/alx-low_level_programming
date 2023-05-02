@@ -2,7 +2,8 @@
 
 /**
  * print_triangle - Prints a triangle
- * @size - The size of the triangle to be printed by char #
+ * @size: The size of the triangle to be printed by char #
+ * Return: void
  */
 
 void print_triangle(int size)
