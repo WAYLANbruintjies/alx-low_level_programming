@@ -22,6 +22,6 @@ int main(void)
 		}
 	}
 
-	printf("%ld/n", maxf);
+	printf("%ld\n", maxf);
 	return (0);
 }
