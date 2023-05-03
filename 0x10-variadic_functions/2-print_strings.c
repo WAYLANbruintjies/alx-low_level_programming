@@ -8,6 +8,8 @@
  * @separator - the string to be printed
  * @n: number of strings passed to the function
  * @...: variadic function
+ * Description: If separator is NULL, don’t print it,
+ * If one of the string is NULL, print (nil) instead
  * Return: void
  */
 
