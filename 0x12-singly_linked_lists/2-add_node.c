@@ -8,6 +8,7 @@
  * @list_t: list to be computed
  * @head: double pointer to list_t
  * @str: string to be added as additional node
+ * Description: adds a new node at the end of a list_t
  * Return: the address of the new element
  * or return NULL if it fails
  */
