@@ -3,26 +3,24 @@
 #include <stdlib.h>
 
 /**
- * get_nodeint_at_index - Computes the nth node of a linked list
- * @head: first part of the first node
- * @index: integer value
- * NOTE: index of the node start at 0
- * Return: node position or NULL if node doesn't exisit
+ * get_nodeint_at_index - returns the nth node of a linked list
+ * @head: first node in the linked list
+ * @index: index of the node starting at 0
+ * Return: the nth node or NULL if the node does not exist
  */
-
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *temp = head;
 	unsigned int n = 0;
-	
-	if (temp == NULL)
-		return (NULL);
-	else
-		return (temp);
+	listint_t *temp = head;
 
 	while (temp && n < index)
 	{
 		temp = temp->next;
 		n++;
 	}
+
+	if (temp == NULL)
+		return (NULL);
+	else
+		return (temp);
 }
