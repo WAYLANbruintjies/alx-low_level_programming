@@ -70,19 +70,19 @@ int main(int argc, char *argv[])
 
 	buff = create_buffer(argv[2]);
 	fp2 = open(argv[1], O_RDONLY);
-	rd = read(from, buffer, 1024);
+	rd = read(fp2, buff, 1024);
 	fp1 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (fp2 == -1 || r == -1)
+		if (fp2 == -1 || rd == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
-			free(buffer);
+			free(buff);
 			exit(98);
 		}
 
-		w = write(to, buff, rd);
+		w = write(fp1, buff, rd);
 		if (fp1 == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
-		rd = read(from, buff, 1024);
+		rd = read(fp2, buff, 1024);
 		fp1 = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (rd > 0);
