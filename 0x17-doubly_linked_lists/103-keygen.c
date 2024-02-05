@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	span = strlen(argv[1]);
 	p[0] = l[(span ^ 59) & 63];
 	for (a = 0, count = 0; a < span; a++)
-		count += argv[1][i];
+		count += argv[1][a];
 	p[1] = l[(count ^ 79) & 63];
 	for (a = 0, b = 1; a < span; a++)
 		b *= argv[1][a];
