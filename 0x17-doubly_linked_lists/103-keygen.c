@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	for (b = 0, a = 0; a < span; a++)
 		b += argv[1][a] * argv[1][a];
 	p[4] = l[(b ^ 239) & 63];
-	for (b = 0, a = 0; (char)i < argv[1][0]; a++)
+	for (b = 0, a = 0; (char)a < argv[1][0]; a++)
 		b = rand();
 	p[5] = l[(b ^ 229) & 63];
 	printf("%s\n", p);
