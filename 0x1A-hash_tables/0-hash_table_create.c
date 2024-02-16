@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+#include <stddef.h>
 
 /**
  * hash_table_create - Creates a new hash table
@@ -21,5 +22,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 	for (i = 0; i < size; i++)
 		h_table->array[i] = NULL;
 
-	return (h_table)
+	return (h_table);
 }
